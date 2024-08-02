@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de cadastro</title>
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="tipo-pessoa">Tipo Pessoa:</label>
+            <select id="tipo-pessoa" name="tipo-pessoa" required>
+                <option value="fisica">Física</option>
+                <option value="juridica">Jurídica</option>
+            </select>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <label for="uf">UF (Estado):</label>
+            <input type="text" id="uf" name="uf" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
     
-     <ul>
-    <h1 class="h1">qualquer coisa</h1>
-     <p>insira seu nome completo</p>
-     <input type="insert">
-     <p>insira seu telefone</p>
-     <input type="insert">
-     <p>insira seu email</p>
-     <input type="insert">
-     <p></p>
-     <form action="#">
-        <label for="pessoas">Pessoa</label>
-        <select name="pessoas" id="pessoa">
-          <option value="PessoaF">Fisica</option>
-          <option value="PessoaJ">Juridica</option>
-          
-        </select>
-        <input type="submit" value="Submit" />
-  </form>
-       
-    </ul>
-
-
-    </body>
+</body>
 </html>
